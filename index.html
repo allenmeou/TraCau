@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tra Câu</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link icon font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__logo">
+          <a href="#">
+            <div class="header__logo--text">
+              <h1>TRA CÂU <span> VIỆT - ANH</span></h1>
+              <h2>MeoU</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="header__menu">
+          <span class="header__menu--icon"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+          <div class="header__paper--menu">
+            <ul class="header__menu--list">
+              <div class="header__menu--theme">
+                <input
+                  type="checkbox"
+                  name="input"
+                  id="dark-mode"
+                  class="input"
+                />
+                <label for="dark-mode" class="label">
+                  <div class="circle"></div>
+                </label>
+              </div>
+              <li class="header__menu--item"><a href="#">Giới thiệu</a></li>
+              <li class="header__menu--item"><a href="#">Điều khoản</a></li>
+              <li class="header__menu--item"><a href="#">API</a></li>
+              <li class="header__menu--item">
+                <a href="#">Bổ sung câu hỏi</a>
+              </li>
+              <li class="header__menu--item"><a href="#">Liên hệ</a></li>
+              <li class="header__menu--item">
+                <a
+                  class="btn-floating btn btn-tw"
+                  type="button"
+                  role="button"
+                  title="Share on facebook"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com"
+                  target="_blank"
+                  rel="noopener"
+                  ><span> <i class="fa-brands fa-facebook"></i>Share</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="quote">
+        <blockquote>
+          <div>
+            <p class="quote-text"></p>
+            <span>-<span class="quote-author"></span></span>
+          </div>
+          <button class="random__quote">random quote</button>
+        </blockquote>
+      </div>
+
+      <div class="search">
+        <form action="" class="form__search">
+          <span class="search__container">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Nhập từ cần dịch"
+              autocomplete="off"
+              autofocus
+              class="search__input"
+            />
+            <div class="search__select">
+              <select name="" id="" class="select-language">
+                <option value="vi">Vietnamese</option>
+                <option value="en" selected>English</option>
+                <option value="fr">French</option>
+                <option value="ja">Japanese</option>
+                <option value="de">German</option>
+                <option value="ko">Korea</option>
+                <option value="th">Thai</option>
+                <option value="uk">Ukrainian</option>
+                <option value="zh">Chinese</option>
+              </select>
+            </div>
+            <div class="search__icon">
+              <span class="icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </span>
+        </form>
+      </div>
+
+      <div class="result">
+        <div class="result__container">
+          <h3 class="result__heading">Bản dịch</h3>
+          <p class="result__text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal__container">
+      <span class="modal__icon--close"> <i class="fa-solid fa-xmark"></i></span>
+
+      <ul class="header__menu--list">
+        <li class="header__menu--item"><a href="#">Giới thiệu</a></li>
+        <li class="header__menu--item"><a href="#">Điều khoản</a></li>
+        <li class="header__menu--item"><a href="#">API</a></li>
+        <li class="header__menu--item">
+          <a href="#">Bổ sung câu hỏi</a>
+        </li>
+        <li class="header__menu--item"><a href="#">Liên hệ</a></li>
+        <li class="header__menu--item">
+          <a
+            class="btn-floating btn btn-tw"
+            type="button"
+            role="button"
+            title="Share on facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com"
+            target="_blank"
+            rel="noopener"
+            ><span> <i class="fa-brands fa-facebook"></i>Share</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

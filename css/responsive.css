@@ -1,0 +1,164 @@
+@media (min-width: 1023px) and (max-width: 1300px) {
+  .app {
+    padding: 20px 10px;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .app {
+    padding: 10px 30px;
+  }
+  .header__paper--menu {
+    display: none;
+  }
+  .header__menu--list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header__menu--item {
+    margin: 61px 15px;
+  }
+  .header__menu--icon {
+    display: block;
+    margin: 10px 5px 0 0;
+    font-size: 30px;
+    padding: 0px 10px 10px 10px;
+  }
+  .modal__container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    overflow-x: scroll;
+    animation: openMenu ease-in 0.5s;
+  }
+  .modal__icon--close {
+    font-size: 30px;
+    color: white;
+    float: right;
+    padding: 10px 20px;
+  }
+  @keyframes openMenu {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes closeMenu {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(0);
+    }
+  }
+}
+/* Mobile */
+@media screen and (max-width: 739px) {
+  .app {
+    padding: 0;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header__logo {
+    margin: 10px 0 0 5px;
+  }
+
+  .header__paper--menu {
+    display: none;
+  }
+
+  .header__menu--list {
+    display: block;
+  }
+
+  .header__menu--icon {
+    display: block;
+    margin: 10px 5px 0 0;
+    font-size: 30px;
+    padding: 0px 10px 10px 10px;
+  }
+
+  .header__menu--theme {
+    display: none;
+  }
+
+  .search__select {
+    top: 45px;
+    margin: 20px 0;
+  }
+
+  .search__select::before {
+    display: none;
+  }
+
+  .quote {
+    padding: 0 5px;
+  }
+
+  .result {
+    margin: 30px 5px;
+  }
+
+  .modal__container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    overflow-x: scroll;
+    animation: openMenu ease-in 0.5s;
+  }
+
+  li.header__menu--item {
+    text-align: center;
+    padding: 20px 0;
+    margin: 50px 0;
+  }
+
+  .modal__icon--close {
+    font-size: 30px;
+    color: white;
+    float: right;
+    padding: 10px 20px;
+  }
+
+  @keyframes openMenu {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes closeMenu {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(0);
+    }
+  }
+}
